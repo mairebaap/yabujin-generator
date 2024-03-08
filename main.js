@@ -1,21 +1,12 @@
-console.log('Hello World!');
-// one context per document
-/*
-var context = new (window.AudioContext || window.webkitAudioContext)();
-var osc = context.createOscillator(); // instantiate an oscillator
-osc.type = 'sine'; // this is the default - also square, sawtooth, triangle
-osc.frequency.value = 440; // Hz
-osc.connect(context.destination); // connect it to the destination
-osc.start(); // start the oscillator
-osc.stop(context.currentTime + 2); // stop 2 seconds after the current time */
-
-function osc(tp, fq) {
+function osc(tp, fq, download) {
   var ctx = new (window.AudioContext || window.webkitAudioConnect)();
   var j = ctx.createOscillator();
   j.type = tp;
   j.frequency.value = fq;
   j.connect(ctx.destination);
   j.start();
+  var chk = document.getElementById("test").value;
+  download = chk;
 }
 
 function yabujin(intensity) {
@@ -25,12 +16,7 @@ function yabujin(intensity) {
     osc('sine', 9000);
     location.reload();
   }
-  document.write("Intensity: ")
-  document.write(i)
-  document.write()
-  document.write("Actual Intensity:")
-  document.write(j)
-  osc('sine', i)
+  osc('sine', i, true)
 }
 
 function ybstrt() {
@@ -39,3 +25,12 @@ function ybstrt() {
     yabujin(l)
   }
 }
+
+function time() {
+  alert("beta!!!!!!!")
+}
+
+function ybstp() {
+  return;
+}
+
