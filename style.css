@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url('/yabujin.jpg');
+  background-image: url('yabujin.jpg');
   background-size: 100vw 100vh;
   background-repeat: no-repeat;
   margin: 0;
