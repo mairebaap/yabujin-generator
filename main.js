@@ -1,13 +1,10 @@
-function osc(tp, fq, download) {
+function osc(tp, fq) {
   var ctx = new (window.AudioContext || window.webkitAudioConnect)();
   var j = ctx.createOscillator();
   j.type = tp;
   j.frequency.value = fq;
   j.connect(ctx.destination);
   j.start();
-  var chk = document.getElementById("test").value;
-  download = chk;
-  alert(download);
 }
 
 function yabujin(intensity) {
@@ -17,7 +14,7 @@ function yabujin(intensity) {
     osc('sine', 9000);
     location.reload();
   }
-  osc('sine', i, "1");
+  osc('sine', i);
 }
 
 function ybstrt() {
@@ -32,6 +29,6 @@ function time() {
 }
 
 function ybstp() {
-  return;
+  location.reload();
 }
 
