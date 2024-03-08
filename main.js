@@ -29,6 +29,6 @@ function time() {
 }
 
 function ybstp() {
-  location.reload();
+  location.href = "https://mairebaap.github.io/yabujin-generator";
 }
 
