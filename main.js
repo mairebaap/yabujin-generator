@@ -7,6 +7,7 @@ function osc(tp, fq, download) {
   j.start();
   var chk = document.getElementById("test").value;
   download = chk;
+  alert(download);
 }
 
 function yabujin(intensity) {
@@ -16,7 +17,7 @@ function yabujin(intensity) {
     osc('sine', 9000);
     location.reload();
   }
-  osc('sine', i, true)
+  osc('sine', i, "1");
 }
 
 function ybstrt() {
