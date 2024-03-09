@@ -38,9 +38,7 @@ function time() {
 }   
  
 
-const str = "4323424242";
-checkStrDigit(str)
-}
+// how?????
 
 function ybstp() {
   location.href = "https://mairebaap.github.io/yabujin-generator";
