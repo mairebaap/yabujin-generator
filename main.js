@@ -12,7 +12,7 @@ function yabujin(intensity) {
   var j = intensity;
   if (i > 20000) {
     osc('sine', 9000);
-    location.reload();
+    document.write("fq higher than 200000, limiting.");
   }
   osc('sine', i);
 }
@@ -25,7 +25,21 @@ function ybstrt() {
 }
 
 function time() {
-  alert("beta!!!!!!!")
+  var s = prompt("How much time? (s)");
+  function isDigit(str) {
+    console.log(/^\d+$/.test(str));
+  }
+  if (isDigit(str) == false) {
+    var l = document.getElementById("k").value;
+    yabujin(l);
+    sleep(s);
+    yabujin(0)
+  }
+}   
+ 
+
+const str = "4323424242";
+checkStrDigit(str)
 }
 
 function ybstp() {
