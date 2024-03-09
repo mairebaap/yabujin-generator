@@ -12,5 +12,9 @@ planned features:
 - generate for specific time
 - download sound
 - post your own yabujin with sound
+- cli version in 3 languages:
+    - c/c++
+    - java
+    - python
 
 # use it today and make yourself feel like you're a worthless piece of shit! (you're not you're just a 9th grader)
